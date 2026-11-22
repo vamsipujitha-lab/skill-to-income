@@ -52,6 +52,7 @@
     if (el && (toggled || skip)) { el.textContent = skip ? "Your visits are not counted on this browser." : "Your visits are counted again on this browser."; el.hidden = false; }
   }
   // Footer: total visits (needs "Allow adding visitor counts on your website" ticked in GoatCounter settings).
+  // GoatCounter caches this number for up to 4 hours, so it lags behind the dashboard. Nothing is shown while it is 0.
   function footer() {
     const el = document.getElementById("visits");
     if (!el) return;
@@ -61,7 +62,7 @@
       .then(r => r.ok ? r.json() : null)
       .then(j => {
         const n = j && typeof j.count === "string" ? j.count.trim() : "";
-        if (/^[0-9][0-9,.  ]{0,14}$/.test(n) && !(toggled || skip)) { el.textContent = n + " visits"; el.hidden = false; }
+        if (/^[0-9][0-9,.  ]{0,14}$/.test(n) && /[1-9]/.test(n) && !(toggled || skip)) { el.textContent = n + " visits"; el.hidden = false; }
       })
       .catch(() => {});
   }
