@@ -1,0 +1,30 @@
+[Unit]
+Description=Skill to Income Academy - check every course, video and material link
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=s2i
+Group=s2i
+Environment=SITE=/var/www/skilltoincome
+EnvironmentFile=-/etc/skilltoincome/linkcheck.env
+ExecStart=/opt/skilltoincome/run-linkcheck.sh
+TimeoutStartSec=30min
+# Hardening: the job can only write its two status locations
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ReadWritePaths=/var/www/skilltoincome/js/data /var/www/skilltoincome/status
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictSUIDSGID=yes
+LockPersonality=yes
+# The check never slows the website down, and can never use up the server's memory
+Nice=10
+CPUQuota=50%
+MemoryMax=512M

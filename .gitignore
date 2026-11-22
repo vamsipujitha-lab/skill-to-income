@@ -1,0 +1,18 @@
+# Secrets: never commit real settings (only the .example file belongs in git)
+deploy/linkcheck.env
+*.env
+!*.env.example
+# Written by the link checker on a server or in GitHub Actions runs
+status/*.tmp
+# Build and tool leftovers
+node_modules/
+__pycache__/
+*.pyc
+*.gz
+*.tmp
+# Editor and system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

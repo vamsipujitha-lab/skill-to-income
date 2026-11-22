@@ -1,0 +1,35 @@
+# Weekly link check for the site (GitHub Pages). Also refreshes GOOD-FIRST-ISSUES.md, the task list for contributors.
+# Marks broken links on the page, swaps removed YouTube videos for the best working one when the
+# YT_API_KEY secret is set, and brings original videos back when they work again.
+name: Weekly link check
+on:
+  schedule:
+    - cron: "0 21 * * 6"        # Saturday 21:00 UTC = Sunday 02:30 India time
+  workflow_dispatch:             # "Run workflow" button in the Actions tab
+permissions:
+  contents: write
+concurrency:
+  group: linkcheck
+  cancel-in-progress: false
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check every link
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          MAX_SEARCHES: "40"
+        run: node tools/links.js --report . || echo "Check finished with warnings (see the report)."
+      - name: Refresh the task list for contributors
+        run: node tools/todo.js > GOOD-FIRST-ISSUES.md
+      - name: Save the results
+        run: |
+          git config user.name "link-check-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/data/link-status.js status/ GOOD-FIRST-ISSUES.md
+          if git diff --cached --quiet; then echo "Nothing changed."; else git commit -m "Weekly link check $(date -u +%F)" && git push; fi

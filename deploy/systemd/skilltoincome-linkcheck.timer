@@ -1,0 +1,12 @@
+[Unit]
+Description=Weekly link check for Skill to Income Academy (Sunday 02:30 IST)
+
+[Timer]
+# Saturday 21:00 UTC = Sunday 02:30 India time
+OnCalendar=Sat *-*-* 21:00:00 UTC
+RandomizedDelaySec=15min
+# If the server was off at that time, run as soon as it is back on
+Persistent=true
+
+[Install]
+WantedBy=timers.target

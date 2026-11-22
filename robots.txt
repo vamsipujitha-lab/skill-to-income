@@ -1,0 +1,5 @@
+# Search engines may index this site.
+User-agent: *
+Allow: /
+Disallow: /status/
+Disallow: /tools/

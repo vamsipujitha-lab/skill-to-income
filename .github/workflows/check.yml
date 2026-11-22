@@ -1,0 +1,24 @@
+# Runs on every push and pull request: the data must pass tools/check.js before it can be merged.
+name: Check roadmap data
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate data (links, videos, timelines, safety)
+        run: node tools/check.js && node tools/check.js | tail -1 | grep -q "No issues found"
+      - name: Every link can be listed
+        run: node tools/links.js > /dev/null
+      - name: Task list for contributors can be made
+        run: node tools/todo.js > /dev/null
+      - name: Single-file build works
+        run: python3 tools/build.py
