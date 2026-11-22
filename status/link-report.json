@@ -1,0 +1,408 @@
+{
+ "checked": "2026-11-22T18:13:24.146Z",
+ "checkedIST": "2026-11-22",
+ "total": 2493,
+ "brokenCount": 13,
+ "unreachableCount": 18,
+ "newlyBroken": [
+  "https://certiport.pearsonvue.com/Certifications/Adobe/Certified-Professional/Overview",
+  "https://academy.postman.com/postman-api-fundamentals-student-expert-certification-1",
+  "https://www.kaggle.com/learn/pandas",
+  "https://portswigger.net/web-security",
+  "https://www.kaggle.com/datasets",
+  "https://www.kaggle.com/learn",
+  "https://www.kaggle.com/competitions",
+  "https://portswigger.net/web-security/sql-injection",
+  "https://portswigger.net/web-security/cross-site-scripting",
+  "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
+  "https://portswigger.net/web-security/sql-injection/lab-login-bypass",
+  "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
+  "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality"
+ ],
+ "fixed": [],
+ "suspicious": false,
+ "broken": {
+  "https://certiport.pearsonvue.com/Certifications/Adobe/Certified-Professional/Overview": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Adobe Certified Professional (Premiere Pro / After Effects)",
+   "where": [
+    "AI Video and Animation › Certification",
+    "AI Video and Animation › Certification: Adobe Certified Professional (Premiere Pro / After Effects)"
+   ]
+  },
+  "https://academy.postman.com/postman-api-fundamentals-student-expert-certification-1": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Free course: Postman Student Expert badge",
+   "where": [
+    "Manual Tester to Automation + AI Tester › Level 5 › Postman and code",
+    "Manual Tester to Automation + AI Tester › Certification"
+   ]
+  },
+  "https://www.kaggle.com/learn/pandas": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Free course: Kaggle Learn: pandas",
+   "where": [
+    "AI with Projects › Level 2 › Data tools"
+   ]
+  },
+  "https://portswigger.net/web-security": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Free course: PortSwigger Web Security Academy",
+   "where": [
+    "Cyber Security › Level 4 › OWASP and labs",
+    "Cyber Security › Certification",
+    "Cyber Security › Certification: PortSwigger Web Security Academy labs",
+    "Job program task › PortSwigger labs",
+    "Cyber Security › Practice sites"
+   ]
+  },
+  "https://www.kaggle.com/datasets": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Kaggle datasets",
+   "where": [
+    "Job program task › Excel practice on real datasets",
+    "Job program task › 2 ML projects with real data",
+    "Python & Data Analyst › Practice sites"
+   ]
+  },
+  "https://www.kaggle.com/learn": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Kaggle Learn",
+   "where": [
+    "Job program task › Machine learning basics project",
+    "AI with Projects › Practice sites"
+   ]
+  },
+  "https://www.kaggle.com/competitions": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Kaggle competitions",
+   "where": [
+    "Job program task › Kaggle beginner competitions",
+    "AI with Projects › Practice sites"
+   ]
+  },
+  "https://portswigger.net/web-security/sql-injection": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Do the PortSwigger SQL injection labs",
+   "where": [
+    "Cyber Security › Practical tasks"
+   ]
+  },
+  "https://portswigger.net/web-security/cross-site-scripting": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Do the PortSwigger cross-site scripting labs",
+   "where": [
+    "Cyber Security › Practical tasks"
+   ]
+  },
+  "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "SQL injection lab: retrieve hidden data",
+   "where": [
+    "Cyber Security › Injection, including SQL injection › Practice question"
+   ]
+  },
+  "https://portswigger.net/web-security/sql-injection/lab-login-bypass": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "SQL injection lab: login bypass",
+   "where": [
+    "Cyber Security › Injection, including SQL injection › Practice question"
+   ]
+  },
+  "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Reflected XSS lab",
+   "where": [
+    "Cyber Security › Cross-site scripting (XSS) › Practice question"
+   ]
+  },
+  "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Access control lab: unprotected admin functionality",
+   "where": [
+    "Cyber Security › Broken access control › Practice question"
+   ]
+  }
+ },
+ "seenBroken": {
+  "https://certiport.pearsonvue.com/Certifications/Adobe/Certified-Professional/Overview": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Adobe Certified Professional (Premiere Pro / After Effects)",
+   "where": [
+    "AI Video and Animation › Certification",
+    "AI Video and Animation › Certification: Adobe Certified Professional (Premiere Pro / After Effects)"
+   ]
+  },
+  "https://academy.postman.com/postman-api-fundamentals-student-expert-certification-1": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Free course: Postman Student Expert badge",
+   "where": [
+    "Manual Tester to Automation + AI Tester › Level 5 › Postman and code",
+    "Manual Tester to Automation + AI Tester › Certification"
+   ]
+  },
+  "https://www.kaggle.com/learn/pandas": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Free course: Kaggle Learn: pandas",
+   "where": [
+    "AI with Projects › Level 2 › Data tools"
+   ]
+  },
+  "https://portswigger.net/web-security": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Free course: PortSwigger Web Security Academy",
+   "where": [
+    "Cyber Security › Level 4 › OWASP and labs",
+    "Cyber Security › Certification",
+    "Cyber Security › Certification: PortSwigger Web Security Academy labs",
+    "Job program task › PortSwigger labs",
+    "Cyber Security › Practice sites"
+   ]
+  },
+  "https://www.kaggle.com/datasets": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Kaggle datasets",
+   "where": [
+    "Job program task › Excel practice on real datasets",
+    "Job program task › 2 ML projects with real data",
+    "Python & Data Analyst › Practice sites"
+   ]
+  },
+  "https://www.kaggle.com/learn": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Kaggle Learn",
+   "where": [
+    "Job program task › Machine learning basics project",
+    "AI with Projects › Practice sites"
+   ]
+  },
+  "https://www.kaggle.com/competitions": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Kaggle competitions",
+   "where": [
+    "Job program task › Kaggle beginner competitions",
+    "AI with Projects › Practice sites"
+   ]
+  },
+  "https://portswigger.net/web-security/sql-injection": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Do the PortSwigger SQL injection labs",
+   "where": [
+    "Cyber Security › Practical tasks"
+   ]
+  },
+  "https://portswigger.net/web-security/cross-site-scripting": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Do the PortSwigger cross-site scripting labs",
+   "where": [
+    "Cyber Security › Practical tasks"
+   ]
+  },
+  "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "SQL injection lab: retrieve hidden data",
+   "where": [
+    "Cyber Security › Injection, including SQL injection › Practice question"
+   ]
+  },
+  "https://portswigger.net/web-security/sql-injection/lab-login-bypass": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "SQL injection lab: login bypass",
+   "where": [
+    "Cyber Security › Injection, including SQL injection › Practice question"
+   ]
+  },
+  "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Reflected XSS lab",
+   "where": [
+    "Cyber Security › Cross-site scripting (XSS) › Practice question"
+   ]
+  },
+  "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality": {
+   "since": "2026-11-22",
+   "detail": "page not found (404)",
+   "label": "Access control lab: unprotected admin functionality",
+   "where": [
+    "Cyber Security › Broken access control › Practice question"
+   ]
+  }
+ },
+ "unreachable": [
+  {
+   "url": "https://www.youtube.com/watch?v=KlfuFFGWw64",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: How to apply for Off-Campus Internships",
+   "where": [
+    "Placement Preparation › Level 3 › Resume, GitHub, LinkedIn › Internships and hackathons"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=oCSaZu4uqno",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: What are the different asset classes?",
+   "where": [
+    "Trading for Beginners to Pro › Level 1 › Money basics › Asset types"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fIMySI_gZJU",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: Day-9 – Git and GitHub",
+   "where": [
+    "Manual Tester to Automation + AI Tester › Level 2 › Git and GitHub › What version control is"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ZoOdwgxmw4U",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: What is GIT in Hindi/Urdu",
+   "where": [
+    "Manual Tester to Automation + AI Tester › Level 2 › Git and GitHub › What version control is"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=P7W4GwXR16E",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: How to Manage Claude AI Privacy Settings [2026 Full Guide]",
+   "where": [
+    "Claude: Beginner to Power User › Level 1 › Claude 101 › Privacy settings"
+   ]
+  },
+  {
+   "url": "https://www.nielit.gov.in",
+   "detail": "TypeError",
+   "label": "NIELIT 'O' Level (includes C)",
+   "where": [
+    "C Programming › Certification",
+    "C Programming › Certification: NIELIT 'O' Level (includes C)"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=JXiJNCtWmcA",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: How to add, commit in Git and push to GitHub (Hindi)",
+   "where": [
+    "Git and GitHub › Level 1 › Git on your computer › init, add and commit"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Q1kHG842HoI",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: Git Branching and Merging – Detailed Tutorial",
+   "where": [
+    "Git and GitHub › Level 2 › Branching and merging"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xBWmBPVTums",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: Day-3 | Terraform Modules | Write your First Module | #terraform #abhishekveeramalla",
+   "where": [
+    "DevOps & Cloud › Level 5 › Terraform and Ansible › Variables and modules"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OKYJCHHSWb4",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: Day-18 | AWS Cost Optimization | Most Popular Cloud and DevOps project| Event Driven Serve",
+   "where": [
+    "DevOps & Cloud › Level 7 › Observability › Cloud cost control"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uyJO0j0rSoM",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: Mastering OSI Model Basics | Cyber Security Tutorial Part 9 In Hindi | NewVersionHacker",
+   "where": [
+    "Cyber Security › Level 1 › Systems and networks › Networking models"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=139Obv9Im20",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: Cost Center Accounting in SAP FICO",
+   "where": [
+    "SAP Career Starter (S/4HANA) › Level 3 › Finance (FICO) › Controlling and cost centres"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VXi3Q8KMlyU",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: How to Create GCP Free Tier Account-Hindi/Urdu | Lec-06 | Google cloud platform Free trial",
+   "where": [
+    "Cloud Computing (AWS, Azure, Google Cloud) › Level 1 › Cloud concepts › Pricing and the free tier"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=90OvVqkm-f8",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: Google cloud VPC Network-Hindi/Urdu | Lec-25| Google Cloud Networking l Google Cloud VPC B",
+   "where": [
+    "Cloud Computing (AWS, Azure, Google Cloud) › Level 2 › AWS hands-on › VPC networking"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gDRzBZAW5hM",
+   "detail": "YouTube did not confirm the video status",
+   "label": "HI video: Cloud Run Overview-Hindi/Urdu | Lec-43 | What is Cloud Run | Cloud Run vs App engine | GCP",
+   "where": [
+    "Cloud Computing (AWS, Azure, Google Cloud) › Level 3 › Google Cloud › Cloud Run"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1WQ70KJu6EY",
+   "detail": "YouTube did not confirm the video status",
+   "label": "EN video: PLC Basics: Ladder Logic",
+   "where": [
+    "PLC, SCADA and Industrial Automation › Level 2 › Ladder logic and more"
+   ]
+  },
+  {
+   "url": "https://gemini.google.com",
+   "detail": "TypeError",
+   "label": "Gemini",
+   "where": [
+    "AI Tools Hub › Open any AI tool"
+   ]
+  },
+  {
+   "url": "https://data.gov.in",
+   "detail": "TypeError",
+   "label": "Open Government Data India",
+   "where": [
+    "Job program task › 3 analysis projects with real data"
+   ]
+  }
+ ],
+ "replacedNow": [],
+ "restored": [],
+ "noReplacement": [],
+ "replacementsInUse": 0,
+ "searchesUsed": 0
+}
