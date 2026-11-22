@@ -373,3 +373,7 @@ details.tq .qlist{font-size:14.5px;margin:4px 0 6px;overflow-wrap:anywhere}
 .fbrand{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--rule);font-size:14.5px;color:var(--ink)}
 .fbrand a{color:var(--ink);font-weight:700}
 .visits{margin-left:auto;font:500 13px/1.3 var(--f-mono);color:var(--muted)}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.hvisits{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--surface);font:600 13px/1.3 var(--f-mono);color:var(--ink)}
+.hvisits::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.hvisits[hidden]{display:none}

@@ -390,13 +390,17 @@ details.tq .qlist{font-size:14.5px;margin:4px 0 6px;overflow-wrap:anywhere}
 .fbrand{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--rule);font-size:14.5px;color:var(--ink)}
 .fbrand a{color:var(--ink);font-weight:700}
 .visits{margin-left:auto;font:500 13px/1.3 var(--f-mono);color:var(--muted)}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.hvisits{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--surface);font:600 13px/1.3 var(--f-mono);color:var(--ink)}
+.hvisits::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.hvisits[hidden]{display:none}
 </style>
 </head>
 <body>
 <noscript><p style="padding:16px">Skill to Income Academy: free job-oriented roadmaps for CSE/IT, ECE, EEE, Mechanical and Civil students. 12 career programs (Software Developer, Full Stack, QA Automation / SDET with AI, Data Analyst, AI / ML Engineer, Mobile App, Cloud / DevOps, Cyber Security, Electronics, Electrical, Mechanical and Civil) built from 34 courses with English and Hindi videos. Please turn on JavaScript to use the interactive roadmap.</p></noscript>
 <header class="top"><div class="wrap">
   <h1 class="brand">Skill to Income Academy</h1>
-  <p class="byline">by <b>Vamsi Pujitha</b></p>
+  <p class="byline"><span>by <b>Vamsi Pujitha</b></span><span class="hvisits" id="hvisits" hidden></span></p>
   <p class="lead">Free roadmaps from zero to job-ready: 12 career programs (1–2 years) built from 34 A–Z courses, with English + Hindi videos, projects and certification guides. Tick topics as you finish; your progress stays in this browser.</p>
   <div class="progio" id="progio"></div>
   <details class="howto"><summary>How to use this roadmap</summary><p>This roadmap is our guide to the basics, based on our experience and research. It is not an official syllabus. Every video and tutorial we link is free; the videos belong to their creators, and we are not linked to any channel, website or institute. Adjust the plan to your own pace and goals. Once you are comfortable, you may choose a paid course from any website or institute you trust, but it is never required.</p></details>
@@ -11803,7 +11807,10 @@ const LINK_STATUS={"checked":null,"broken":{}};
       .then(r => r.ok ? r.json() : null)
       .then(j => {
         const n = j && typeof j.count === "string" ? j.count.trim() : "";
-        if (/^[0-9][0-9,.  ]{0,14}$/.test(n) && /[1-9]/.test(n) && !(toggled || skip)) { el.textContent = n + " visits"; el.hidden = false; }
+        if (!/^[0-9][0-9,.  ]{0,14}$/.test(n) || !/[1-9]/.test(n)) return;
+        const h = document.getElementById("hvisits");
+        if (h) { h.textContent = n + " visits so far"; h.hidden = false; }
+        if (!(toggled || skip)) { el.textContent = n + " visits"; el.hidden = false; }
       })
       .catch(() => {});
   }

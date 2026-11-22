@@ -62,7 +62,10 @@
       .then(r => r.ok ? r.json() : null)
       .then(j => {
         const n = j && typeof j.count === "string" ? j.count.trim() : "";
-        if (/^[0-9][0-9,.  ]{0,14}$/.test(n) && /[1-9]/.test(n) && !(toggled || skip)) { el.textContent = n + " visits"; el.hidden = false; }
+        if (!/^[0-9][0-9,.  ]{0,14}$/.test(n) || !/[1-9]/.test(n)) return;
+        const h = document.getElementById("hvisits");
+        if (h) { h.textContent = n + " visits so far"; h.hidden = false; }
+        if (!(toggled || skip)) { el.textContent = n + " visits"; el.hidden = false; }
       })
       .catch(() => {});
   }
