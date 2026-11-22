@@ -337,3 +337,14 @@ The top bar now works in three steps:
   checklist and `CODE_OF_CONDUCT.md`, so GitHub's "Community standards" page is all green.
 - **`js/data/questions.js` has one question per line** (it was one very long line), so pull requests are easy to
   review and rarely clash. Same data; the checker and tests are unchanged.
+
+## Visitor count and name in header/footer (version 23, 23 Nov 2026)
+
+- **Visitor count:** `js/stats.js` sends one hit per course or program page to GoatCounter (free, open source, no
+  cookies, no personal data, so no cookie banner is needed). It counts only on `vamsipujitha-lab.github.io`, never on
+  a laptop copy, in tests, or for automated browsers. The footer shows the total ("1,234 visits") once "Allow adding
+  visitor counts on your website" is ticked in GoatCounter. Dashboard: https://skilltoincome.goatcounter.com
+- To stop counting your own visits on a browser, open the site once with `#toggle-goatcounter` at the end of the
+  address (do it again to undo).
+- The page's security policy allows only `https://skilltoincome.goatcounter.com` for the count (no outside scripts).
+- **"Vamsi Pujitha"** now appears once under the title and in the footer bar, instead of the faint watermark across the page.

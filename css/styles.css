@@ -2,7 +2,7 @@
 :root{
   --bg:#f5f6f8; --surface:#ffffff; --sunk:#eef1f5; --ink:#16202c; --muted:#555f6c; --med:#955f00; --on-c:#fff; --rule:#dde2e9;
   --l-trading:#9c6007; --l-testing:#0c7d74; --l-ai:#5b4fc4; --l-claude:#b25126; --l-tools:#3d5a80; --l-data:#2f7d32; --l-web:#1f6fb2; --l-devops:#7a5c12; --l-cyber:#b0263f; --l-c:#4a5a8a; --l-cpp:#2b5ea8; --l-java:#b5531c; --l-python:#2f6f9f; --l-sql:#7b4fa0; --l-full:#0e7c6b; --l-android:#377d34; --l-ios:#4b5563; --l-dsa:#8a3b8f; --l-place:#a23b3b; --l-aivideo:#c2387a; --l-git:#24292f; --l-sap:#0a6ed1; --l-cloud:#1873ad; --l-ece:#6d3fb8; --l-eee:#9a6107; --l-mech:#5b6770; --l-civil:#8a5a2b;
-  --warn-bg:#fff4dd; --warn-ink:#6b4300; --ok:#1f7a45; --wm-ink:rgba(22,32,44,.055);
+  --warn-bg:#fff4dd; --warn-ink:#6b4300; --ok:#1f7a45;
   --f-display:"Familjen Grotesk","Segoe UI",system-ui,sans-serif;
   --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
@@ -10,11 +10,11 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0f141b; --surface:#171e28; --sunk:#131922; --ink:#e7ecf2; --muted:#9aa6b4; --med:#e3a548; --on-c:#0f141b; --rule:#2a3442;
   --l-trading:#e9a33a; --l-testing:#3cc2b6; --l-ai:#9a90f0; --l-claude:#ec865a; --l-tools:#8fb0d6; --l-data:#6cc070; --l-web:#6fb2ef; --l-devops:#d6b25a; --l-cyber:#f07a90; --l-c:#9fb0e0; --l-cpp:#7aa8ef; --l-java:#f09a66; --l-python:#7dbbe6; --l-sql:#c49ae6; --l-full:#4fd1bb; --l-android:#86d282; --l-ios:#b6bec9; --l-dsa:#e08ae4; --l-place:#f08a8a; --l-aivideo:#f07ab5; --l-git:#c9d1d9; --l-sap:#5aa9f0; --l-cloud:#6cc3f0; --l-ece:#b493f0; --l-eee:#f0b45a; --l-mech:#aab6c0; --l-civil:#d9a676;
-  --warn-bg:#33270f; --warn-ink:#f2d29a; --ok:#5fcf8c; --wm-ink:rgba(231,236,242,.075); color-scheme:dark}}
+  --warn-bg:#33270f; --warn-ink:#f2d29a; --ok:#5fcf8c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0f141b; --surface:#171e28; --sunk:#131922; --ink:#e7ecf2; --muted:#9aa6b4; --med:#e3a548; --on-c:#0f141b; --rule:#2a3442;
   --l-trading:#e9a33a; --l-testing:#3cc2b6; --l-ai:#9a90f0; --l-claude:#ec865a; --l-tools:#8fb0d6; --l-data:#6cc070; --l-web:#6fb2ef; --l-devops:#d6b25a; --l-cyber:#f07a90; --l-c:#9fb0e0; --l-cpp:#7aa8ef; --l-java:#f09a66; --l-python:#7dbbe6; --l-sql:#c49ae6; --l-full:#4fd1bb; --l-android:#86d282; --l-ios:#b6bec9; --l-dsa:#e08ae4; --l-place:#f08a8a; --l-aivideo:#f07ab5; --l-git:#c9d1d9; --l-sap:#5aa9f0; --l-cloud:#6cc3f0; --l-ece:#b493f0; --l-eee:#f0b45a; --l-mech:#aab6c0; --l-civil:#d9a676;
-  --warn-bg:#33270f; --warn-ink:#f2d29a; --ok:#5fcf8c; --wm-ink:rgba(231,236,242,.075); color-scheme:dark}
+  --warn-bg:#33270f; --warn-ink:#f2d29a; --ok:#5fcf8c; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
 .wrap{max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
@@ -173,10 +173,6 @@ footer{border-top:1px solid var(--rule);padding-block:18px 30px;color:var(--mute
 a.dead{opacity:.8}
 a.vid.dead{border-style:dashed;border-color:var(--warn-ink)}
 .deadtag{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px;background:var(--warn-bg);color:var(--warn-ink);vertical-align:middle}
-/* Watermark "Vamsi Pujitha": fixed, faint, never blocks clicks or reading */
-.wm{position:fixed;inset:0;z-index:40;pointer-events:none;background:var(--wm-ink);
- -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='230'%3E%3Ctext x='180' y='115' text-anchor='middle' dominant-baseline='middle' transform='rotate%28-24 180 115%29' font-family='Segoe UI,Arial,sans-serif' font-size='22' font-weight='700' letter-spacing='3'%3EVamsi Pujitha%3C/text%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='230'%3E%3Ctext x='180' y='115' text-anchor='middle' dominant-baseline='middle' transform='rotate%28-24 180 115%29' font-family='Segoe UI,Arial,sans-serif' font-size='22' font-weight='700' letter-spacing='3'%3EVamsi Pujitha%3C/text%3E%3C/svg%3E");
- -webkit-mask-repeat:repeat;mask-repeat:repeat;-webkit-mask-size:360px 230px;mask-size:360px 230px}
 /* Copy protection (deterrent): no text selection except in form fields */
 body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 input,textarea,select{-webkit-user-select:text;user-select:text}
@@ -370,3 +366,10 @@ details.tq .qlist{font-size:14.5px;margin:4px 0 6px;overflow-wrap:anywhere}
   .osep{display:none}
   .omt{flex:none;margin-left:auto;font:500 13px/1 var(--f-mono);color:var(--muted);white-space:nowrap}
 }
+
+/* v23: name in the header and footer (replaces the page-wide watermark) */
+.byline{margin:6px 0 0;font:600 15px/1.3 var(--f-display);color:var(--muted);letter-spacing:.01em}
+.byline b{color:var(--ink)}
+.fbrand{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--rule);font-size:14.5px;color:var(--ink)}
+.fbrand a{color:var(--ink);font-weight:700}
+.visits{margin-left:auto;font:500 13px/1.3 var(--f-mono);color:var(--muted)}
