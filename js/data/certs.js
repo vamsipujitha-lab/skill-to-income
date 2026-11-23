@@ -52,7 +52,7 @@ const CERTS={
   C_("Intl","CPA / CPP – C++ Certified Associate / Professional","C++ Institute","Entry / Advanced","Paid exam","https://cppinstitute.org",["Free C++ Essentials courses","https://cppinstitute.org"],["Sample tests on the exam pages","https://cppinstitute.org"],""),
   C_("India","NPTEL Programming in Modern C++","NPTEL, Govt. of India","Intermediate","Course free; exam fee",NPTEL,["Lecture videos (free)",NPTEL],["Weekly assignments",NPTEL],""),
   C_("Co","TCS NQT (National Qualifier Test)","TCS iON","Entry","Check current fee","https://www.tcsion.com",["Syllabus on TCS iON","https://www.tcsion.com"],["Sample tests on TCS iON","https://www.tcsion.com"],"A hiring test used by many companies; C++ and DSA help a lot."),
-  C_("India","GATE Computer Science","IITs / IISc","Advanced","Paid exam","",["Official syllabus on this year's GATE website",""],["Previous years' papers on this year's GATE website",""],"")
+  C_("India","GATE Computer Science","IITs / IISc","Advanced","Paid exam","https://gate2027.iitm.ac.in/",["Official syllabus on this year's GATE website","https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/CS_GATE2027_Syllabus.pdf"],["Previous years' papers on this year's GATE website","https://gate2027.iitm.ac.in/download"],"")
  ],
  java:[
   C_("Intl","Oracle Certified Professional: Java SE 21 Developer (1Z0-830)","Oracle","Intermediate–Advanced","Paid exam","https://education.oracle.com",["Exam topics on Oracle University; Dev.java (free)","https://dev.java/learn/"],["Oracle's official practice test (paid) or reputable practice books","https://education.oracle.com"],""),
